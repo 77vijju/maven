@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'sshpass -p "vijju" scp target/DemoATR.war vijju@172.17.0.4:/opt/apache-tomcat-9.0.56/webapps'
+                sh 'sshpass -p "vijju" scp target/sparkjava-hello-world-1.0.war vijju@172.17.0.4:/opt/apache-tomcat-9.0.56/webapps'
             }
         }
     }
