@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Get_Code_Master') {
             steps {
-                git 'https://github.com/AneesRavidKhan/DemoATC.git'
+                git 'https://github.com/kliakos/sparkjava-war-example.git'
             }
         }
         stage('Build_Code') {
