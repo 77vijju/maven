@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'sshpass -p "suri" scp target/DemoATR.war root@3.110.221.191:/var/lib/tomcat9/webapps'
+                sh 'sshpass -p "vijju" scp target/DemoATR.war vijju@172.17.0.3:/opt/apache-tomcat-9.0.56/webapps'
             }
         }
     }
